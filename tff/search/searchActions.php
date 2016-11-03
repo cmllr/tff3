@@ -28,15 +28,19 @@ class search
                where match(title,contents) against("'.$suchbegriff.'") and visible=1 and p.cat_id!=0');
 
         $results = array();
-        foreach ($blogposts as $row => $value) {
-            $score = $value['score'];
-            $result[$score]['title'] = $value['title'];
-            $result[$score]['url'] = WEB.'blog/show/'.urlencode($value['handle']).'/'.urlencode($value['title']);
+        if ($blogposts) {
+            foreach ($blogposts as $row => $value) {
+                $score = $value['score'];
+                $result[$score]['title'] = $value['title'];
+                $result[$score]['url'] = WEB.'blog/show/'.urlencode($value['handle']).'/'.urlencode($value['title']);
+            }
         }
-        foreach ($postings as $row => $value) {
-            $score = $value['score'];
-            $result[$score]['title'] = $value['title'];
-            $result[$score]['url'] = WEB.'cms/'.urlencode($value['handle']).'/'.urlencode($value['filename']);
+        if ($postings) {
+            foreach ($postings as $row => $value) {
+                $score = $value['score'];
+                $result[$score]['title'] = $value['title'];
+                $result[$score]['url'] = WEB.'cms/'.urlencode($value['handle']).'/'.urlencode($value['filename']);
+            }
         }
         ksort($result);
         $template->assign('result', $result);
