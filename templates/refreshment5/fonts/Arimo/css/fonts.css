@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Arimo';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Arimo-regular/Arimo-regular.eot');
+  src: url('/fonts/Arimo-regular/Arimo-regular.eot?#iefix') format('embedded-opentype'),
+       local('Arimo'),
+       local('Arimo-regular'),
+       url('/fonts/Arimo-regular/Arimo-regular.woff2') format('woff2'),
+       url('/fonts/Arimo-regular/Arimo-regular.woff') format('woff'),
+       url('/fonts/Arimo-regular/Arimo-regular.ttf') format('truetype'),
+       url('/fonts/Arimo-regular/Arimo-regular.svg#Arimo') format('svg');
+}
+

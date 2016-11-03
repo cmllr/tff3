@@ -1,0 +1,37 @@
+# PHP Settings I think are useful
+php_value post_max_size 32M 
+php_value upload_max_filesize 32M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300
+php_value session.gc_maxlifetime 86400
+
+# Deflate Compression by FileType
+<IfModule mod_deflate.c>
+ AddOutputFilterByType DEFLATE text/plain
+ AddOutputFilterByType DEFLATE text/html
+ AddOutputFilterByType DEFLATE text/xml
+ AddOutputFilterByType DEFLATE text/css
+ AddOutputFilterByType DEFLATE text/javascript
+ AddOutputFilterByType DEFLATE application/xml
+ AddOutputFilterByType DEFLATE application/xhtml+xml
+ AddOutputFilterByType DEFLATE application/rss+xml
+ AddOutputFilterByType DEFLATE application/atom_xml
+ AddOutputFilterByType DEFLATE application/javascript
+ AddOutputFilterByType DEFLATE application/x-javascript
+ AddOutputFilterByType DEFLATE application/x-shockwave-flash
+</IfModule>
+
+RewriteEngine on
+ Options -MultiViews
+Redirect /sitemap.xml /sitemap
+RewriteCond  %{REQUEST_FILENAME} !-f
+RewriteCond  %{REQUEST_FILENAME} !-d
+RewriteRule !index\.php - [C]
+RewriteRule  ^(.*)$ index.php [QSA,L]
+
+<IfModule mod_headers.c>
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+</ifModule>

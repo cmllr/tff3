@@ -4,6 +4,7 @@
 
 ## Installation ##
 - This software depends on some bower-components so please install bower (www.bower.io) and do a bower update before uploading to FTP
+- This software depends on some composer-components as well. Composer update will help
 - Upload this code to a standard php/mysql webserver capable of mod_rewrite and .htaccess. 
 - create and chmod the folder cache to write access for php. 
 - run install/index.php

@@ -1,0 +1,23 @@
+;<?php exit() ?> Configuration for TFF3
+
+
+[database]
+server = 
+user = 
+pw = 
+database = 
+prefix = tff_
+
+[view]
+template = templates/refreshment5/
+
+[http]
+webroot = 
+mp3root = 
+default_title = Projekt
+caching = true
+
+[security]
+salt = b
+admin = 
+

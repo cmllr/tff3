@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Cabin';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Cabin-regular/Cabin-regular.eot');
+  src: url('/fonts/Cabin-regular/Cabin-regular.eot?#iefix') format('embedded-opentype'),
+       local('Cabin Regular'),
+       local('Cabin-regular'),
+       url('/fonts/Cabin-regular/Cabin-regular.woff2') format('woff2'),
+       url('/fonts/Cabin-regular/Cabin-regular.woff') format('woff'),
+       url('/fonts/Cabin-regular/Cabin-regular.ttf') format('truetype'),
+       url('/fonts/Cabin-regular/Cabin-regular.svg#Cabin') format('svg');
+}
+

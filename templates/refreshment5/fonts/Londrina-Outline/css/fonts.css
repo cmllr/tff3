@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Londrina Outline';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.eot');
+  src: url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.eot?#iefix') format('embedded-opentype'),
+       local('Londrina Outline'),
+       local('Londrina-Outline-regular'),
+       url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.woff2') format('woff2'),
+       url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.woff') format('woff'),
+       url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.ttf') format('truetype'),
+       url('/fonts/Londrina-Outline-regular/Londrina-Outline-regular.svg#LondrinaOutline') format('svg');
+}
+

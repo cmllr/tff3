@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Search Trancefish-DE</ShortName>
+    <Description>Search my Site</Description>
+    <Tags>TFF3-Framework</Tags>
+    <Contact>info@trancefish.de</Contact>
+    <Url type="application/rss+xml" 
+         template="http://trancefish.de/search/?q={searchTerms}"/>
+</OpenSearchDescription>

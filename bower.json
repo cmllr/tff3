@@ -1,0 +1,23 @@
+{
+  "name": "tff",
+  "authors": [
+    "info@trancefish.de"
+  ],
+  "description": "my tiny framework",
+  "main": "index.php",
+  "license": "GPL",
+  "homepage": "http://www.trancefish.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ckeditor": "^4.5.9",
+    "famfamfam-mini": "^1.0.0",
+    "font-awesome": "fontawesome#^4.6.3",
+    "filterTable": "^1.5.6"
+  }
+}
