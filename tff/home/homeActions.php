@@ -11,25 +11,7 @@ class home
     public function __construct()
     {
         $this->cdn_active = false;
-
         return false;
-        $domain = 'www.trancefish.de.nyud.net';
-        $starttime = microtime(true);
-        $file = fsockopen($domain, 80, $errno, $errstr, 10);
-        $stoptime = microtime(true);
-        $status = 0;
-
-        if (!$file) {
-            $this->cdn_active = false;
-        }  // Site is down
-        else {
-            fclose($file);
-            $status = ($stoptime - $starttime) * 1000;
-            $status = floor($status);
-            $this->cdn_active = true;
-        }
-
-        return $status;
     }
 
     public function doDefault()
